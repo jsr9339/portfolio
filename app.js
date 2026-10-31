@@ -4,6 +4,8 @@
   const $ = s => document.querySelector(s);
   const esc = v => String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const WEEKS = 8;
+  // \n 으로 나눈 의미 단위를 줄 안에서 쪼개지지 않는 덩어리로 감싼다
+  const units = v => esc(v).split("\n").map(u => `<span class="unit">${u}</span>`).join(" ");
 
   fetch("portfolio.json").then(r => r.json()).then(P => {
     $("#owner").textContent = P.owner;
@@ -26,8 +28,8 @@
         <div class="body">
           <div class="chips">${(c.tags || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>
           <h3>${esc(c.title)}</h3>
-          <p class="line">${esc(c.line)}</p>
-          <div class="judge"><span class="ic">✓</span><div><b>내가 내린 판단</b>${esc(c.judgment)}</div></div>
+          <p class="line">${units(c.line)}</p>
+          <div class="judge"><span class="ic">✓</span><div><b>내가 내린 판단</b>${units(c.judgment)}</div></div>
           <div class="foot-row"><span class="ai">${(c.ai || []).map(esc).join(" · ")}</span>
             ${c.url ? `<a class="go" href="${esc(c.url)}" target="_blank" rel="noopener">써 보기 →</a>`
                     : `<span class="go off">링크를 넣으십시오</span>`}</div>

@@ -75,6 +75,8 @@ h1 em { font-style: normal; color: var(--accent); }
 .circ { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: var(--accent); display: grid; place-items: center; margin: 0 auto 12px; font-size: 20px; font-weight: 900; }
 .value h4 { margin: 0 0 6px; font-size: 16px; color: var(--ink); }
 .value p { margin: 0; font-size: 13.5px; color: var(--dim); line-height: 1.6; }
-/* portfolio.json 문장 속 줄바꿈(\n)은 의미 단위로 넣은 것이라 그대로 살린다 */
-.intro, .line, .judge div, .value p { white-space: pre-line; }
+/* 소개(intro)의 \n 은 문장마다 줄을 바꾸는 자리라 그대로 살린다 */
+.intro { white-space: pre-line; }
+/* 카드 설명 · 판단의 \n 은 의미 단위 경계 — 한 줄에 들어가는 만큼 붙이고, 넘칠 때만 단위 사이에서 넘긴다 */
+.unit { display: inline-block; }
 .fineprint { padding: 48px 0 64px; font-size: 12px; color: rgba(243,234,216,.65); text-align: center; }
