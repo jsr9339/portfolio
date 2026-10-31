@@ -17,7 +17,7 @@ body { margin: 0; background: var(--blue); color: var(--body); line-height: 1.6;
 .tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 h1 { font-size: clamp(34px, 7vw, 58px); font-weight: 800; letter-spacing: -.035em; line-height: 1.15; margin: 16px 0; }
 h1 em { font-style: normal; color: var(--accent); }
-.intro { max-width: 600px; margin: 0; font-size: 16px; line-height: 1.75; color: rgba(243,234,216,.85); }
+.intro { max-width: 720px; margin: 0; font-size: 16px; line-height: 1.75; color: rgba(243,234,216,.85); }
 .cta { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
 .cta a { font-size: 14px; font-weight: 700; text-decoration: none; padding: 11px 18px; border-radius: 10px; }
 .cta .p { background: var(--accent); color: var(--accent-ink); }
@@ -75,4 +75,6 @@ h1 em { font-style: normal; color: var(--accent); }
 .circ { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: var(--accent); display: grid; place-items: center; margin: 0 auto 12px; font-size: 20px; font-weight: 900; }
 .value h4 { margin: 0 0 6px; font-size: 16px; color: var(--ink); }
 .value p { margin: 0; font-size: 13.5px; color: var(--dim); line-height: 1.6; }
+/* portfolio.json 문장 속 줄바꿈(\n)은 의미 단위로 넣은 것이라 그대로 살린다 */
+.intro, .line, .judge div, .value p { white-space: pre-line; }
 .fineprint { padding: 48px 0 64px; font-size: 12px; color: rgba(243,234,216,.65); text-align: center; }
