@@ -11,9 +11,9 @@
     const slots = Array.from({ length: 8 }, (_, i) => P.cards.find(c => c.week === i + 1));
     $("#cards").innerHTML = slots.map((c, i) => c ? `
       <article class="card">
-        ${c.img ? `<img src="${esc(c.img)}" alt="${esc(c.title)} 화면" loading="lazy">` : `<div class="noimg">${i + 1}주</div>`}
+        ${c.img ? `<img src="${esc(c.img)}" alt="${esc(c.title)} 화면" loading="lazy">` : `<div class="noimg">${i + 1}주차</div>`}
         <div class="body">
-          <div class="wk">${c.week}주</div>
+          <div class="wk">${c.week}주차</div>
           <h3>${esc(c.title)}</h3>
           <p class="line">${esc(c.line)}</p>
           <div class="judge"><b>내가 내린 판단</b>${esc(c.judgment)}</div>
@@ -22,7 +22,7 @@
                   : `<span class="go off">링크를 넣으십시오</span>`}
         </div>
       </article>` : `
-      <article class="card empty"><div class="noimg">${i + 1}주</div>
+      <article class="card empty"><div class="noimg">${i + 1}주차</div>
         <div class="body"><h3>아직</h3><p class="line muted">이 주가 끝나면 한 칸을 채웁니다</p></div></article>`).join("");
 
     const p = P.proposal;
