@@ -9,14 +9,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main id="app">
-  <header class="hero">
-    <div class="badge" id="owner"></div>
-    <h1 id="headline"></h1>
-    <p id="intro" class="muted"></p>
-    <nav class="jump"><a href="#cards">만든 것</a><a href="#proposal">제안</a></nav>
-  </header>
+<header class="hero"><div class="wrap">
+  <div class="tag"><span><span id="owner"></span> · HR PORTFOLIO</span></div>
+  <h1><span id="headline"></span><br><em id="headline-em"></em></h1>
+  <p id="intro" class="intro"></p>
+  <nav class="cta"><a class="p" href="#cards">만든 것 보기</a><a class="s" id="to-proposal" href="#proposal" hidden>제안</a></nav>
+</div></header>
 
+<main class="wrap">
+  <section id="stats" class="stats"></section>
+
+  <div class="sec-title"><h2>만든 것</h2><span>매주 한 칸씩 채워집니다</span></div>
   <section id="cards" class="cards"></section>
 
   <section id="proposal" class="proposal" hidden>
@@ -27,6 +30,9 @@
     <h3>틀린다면</h3><ul id="p-wrong"></ul>
     <h3>하지 말 것</h3><p id="p-dont"></p>
   </section>
+
+  <div class="sec-title" id="values-title" hidden><h2>일하는 방식</h2></div>
+  <section id="values" class="values"></section>
 
   <footer class="fineprint">각 도구의 정답과 숫자는 법령 원문과 공개 데이터에서 가져왔고, 도구 안에 기준일을 함께 적었습니다.</footer>
 </main>
