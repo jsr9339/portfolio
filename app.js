@@ -17,10 +17,10 @@
     $("#stats").innerHTML = stats.map(s =>
       `<div class="stat"><b>${esc(s.num)}<small>${esc(s.unit)}</small></b><span>${esc(s.label)}</span></div>`).join("");
 
-    // 채운 카드 + 다음 주차 한 칸
-    const cards = [...P.cards].sort((a, b) => a.week - b.week);
-    const next = cards.length ? cards[cards.length - 1].week + 1 : 1;
-    $("#cards").innerHTML = cards.map(c => `
+    // 1~8주차 칸을 모두 그린다. 빈 칸 중 첫 칸에만 로드맵을 붙인다
+    const slots = Array.from({ length: WEEKS }, (_, i) => P.cards.find(c => c.week === i + 1));
+    const next = slots.findIndex(c => !c) + 1;
+    $("#cards").innerHTML = slots.map((c, i) => c ? `
       <article class="card">
         <div class="pic">${c.img ? `<img src="${esc(c.img)}" alt="${esc(c.title)} 화면" loading="lazy">` : ""}<span class="pill">${c.week}주차</span></div>
         <div class="body">
@@ -32,12 +32,16 @@
             ${c.url ? `<a class="go" href="${esc(c.url)}" target="_blank" rel="noopener">써 보기 →</a>`
                     : `<span class="go off">링크를 넣으십시오</span>`}</div>
         </div>
-      </article>`).join("") + (next <= WEEKS ? `
+      </article>` : i + 1 === next ? `
       <div class="card empty">
-        <span class="pill2">${next}주차</span>
+        <span class="pill2">${i + 1}주차</span>
         <b>다음 HR 도구를 준비 중입니다</b>
         <div class="roadmap">${(P.roadmap || []).map(r => `<span>${esc(r)}</span>`).join("")}</div>
-      </div>` : "");
+      </div>` : `
+      <div class="card empty">
+        <span class="pill2">${i + 1}주차</span>
+        <span class="soon">이 주가 끝나면 한 칸을 채웁니다</span>
+      </div>`).join("");
 
     if (P.values && P.values.length) {
       $("#values-title").hidden = false;
