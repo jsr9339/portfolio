@@ -15,7 +15,7 @@
   ],
   "cards": [
     {"week": 1, "title": "굿모닝 노동법!", "tags": ["노동법", "4대 보험"],
-     "line": "맨날 똑같은 출근길 NO!\n나에게 득이 되고 힘이 되는 노동법에 대해 알아볼까요?",
+     "line": "맨날 똑같은 출근길은 NO!\n나에게 득이 되고 힘이 되는 노동법에 대해 알아볼까요?",
      "judgment": "정답은 법령 원문에서만 뽑고,\n문항마다 기준일과 한계를\n함께 표시했다",
      "ai": ["Claude Code", "v0", "Perplexity"], "url": "https://gam-test-delta.vercel.app/", "img": "img/w1.png"}
   ],
