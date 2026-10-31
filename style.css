@@ -45,6 +45,8 @@ h1 em { font-style: normal; color: var(--accent); }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
 .chip { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 6px; background: var(--soft); color: var(--blue); }
 .card h3 { margin: 0 0 6px; font-size: 21px; color: var(--ink); letter-spacing: -.02em; }
+/* 카드 핵심 숫자 — 무엇을 만들었는지 한 줄로(12스테이지 · 60문항 · …) */
+.facts { margin: -2px 0 10px; font-size: 13px; font-weight: 700; color: var(--blue); }
 .line { margin: 0 0 14px; font-size: 14.5px; }
 .judge { display: flex; gap: 12px; background: var(--soft); border-radius: 12px; padding: 12px 14px; font-size: 14.5px; line-height: 1.6; }
 .judge .ic { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-weight: 900; }

@@ -28,6 +28,7 @@
         <div class="body">
           <div class="chips">${(c.tags || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>
           <h3>${esc(c.title)}</h3>
+          ${(c.facts || []).length ? `<p class="facts">${c.facts.map(esc).join(" · ")}</p>` : ""}
           <p class="line">${units(c.line)}</p>
           <div class="judge"><span class="ic">✓</span><div><b>내가 내린 판단</b>${units(c.judgment)}</div></div>
           <div class="foot-row"><span class="ai">${(c.ai || []).map(esc).join(" · ")}</span>
