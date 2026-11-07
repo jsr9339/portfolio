@@ -10,7 +10,7 @@ body { margin: 0; background: var(--blue); color: var(--body); line-height: 1.6;
 [hidden] { display: none !important; }
 
 /* 머리말 */
-.hero { position: relative; overflow: hidden; color: var(--cream); padding: 64px 0 96px; }
+.hero { position: relative; overflow: hidden; color: var(--cream); padding: 64px 0 24px; }
 .hero::after { content: ""; position: absolute; right: -120px; top: -120px; width: 420px; height: 420px; border-radius: 50%;
   border: 1px solid rgba(243,234,216,.18); }
 .tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .14em; color: rgba(243,234,216,.75); }
@@ -22,14 +22,8 @@ h1 em { font-style: normal; color: var(--accent); }
 .cta a { font-size: 14px; font-weight: 700; text-decoration: none; padding: 11px 18px; border-radius: 10px; }
 .cta .p { background: var(--accent); color: var(--accent-ink); }
 .cta .s { color: var(--cream); border: 1px solid rgba(243,234,216,.45); }
-
-/* 숫자 요약 */
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: -56px; position: relative; }
-.stat { background: var(--paper); border-radius: 16px; padding: 20px 22px; box-shadow: 0 10px 26px rgba(20,35,60,.18); }
-.stat b { display: block; font-size: clamp(26px, 5vw, 40px); font-weight: 800; color: var(--blue); letter-spacing: -.03em; line-height: 1.1; }
-.stat b small { font-size: .45em; color: var(--ink); margin-left: 3px; }
-.stat span { font-size: 13px; color: var(--dim); }
-@media (max-width: 560px) { .stat { padding: 14px; } .stat span { font-size: 12px; } }
+.cta .done { align-self: center; font-size: 14px; color: rgba(243,234,216,.85); }
+.cta .done b { color: var(--accent); font-size: 16px; font-weight: 800; margin-left: 2px; }
 
 /* 만든 것 */
 .sec-title { display: flex; align-items: baseline; justify-content: space-between; color: var(--cream); margin: 56px 0 18px; }

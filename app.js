@@ -13,11 +13,9 @@
     $("#headline-em").textContent = P.headline_em || "";
     $("#intro").textContent = P.intro;
 
-    // 숫자 요약: 첫 칸은 완성한 도구 수, 나머지는 JSON 의 stats
+    // 완성한 도구 수: 링크가 있는 칸을 센다
     const done = P.cards.filter(c => c.url).length;
-    const stats = [{ num: done, unit: `/ ${WEEKS}`, label: "완성한 도구" }, ...(P.stats || [])];
-    $("#stats").innerHTML = stats.map(s =>
-      `<div class="stat"><b>${esc(s.num)}<small>${esc(s.unit)}</small></b><span>${esc(s.label)}</span></div>`).join("");
+    $("#done").innerHTML = `완성한 도구 <b>${done}/${WEEKS}</b>`;
 
     // 1~8주차 칸을 모두 그린다. 빈 칸 중 첫 칸에만 로드맵을 붙인다
     const slots = Array.from({ length: WEEKS }, (_, i) => P.cards.find(c => c.week === i + 1));
