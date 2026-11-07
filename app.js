@@ -17,6 +17,10 @@
     const done = P.cards.filter(c => c.url).length;
     $("#done").innerHTML = `완성한 도구 <b>${done}/${WEEKS}</b>`;
 
+    // 사용한 AI: 모든 칸의 ai 를 모아 겹치는 이름은 한 번만
+    const ais = [...new Set(P.cards.flatMap(c => c.ai || []))];
+    $("#ai-used").innerHTML = ais.length ? `<span>사용한 AI</span>${ais.map(a => `<b>${esc(a)}</b>`).join("")}` : "";
+
     // 1~8주차 칸을 모두 그린다. 빈 칸 중 첫 칸에만 로드맵을 붙인다
     const slots = Array.from({ length: WEEKS }, (_, i) => P.cards.find(c => c.week === i + 1));
     const next = slots.findIndex(c => !c) + 1;

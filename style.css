@@ -24,6 +24,10 @@ h1 em { font-style: normal; color: var(--accent); }
 .cta .s { color: var(--cream); border: 1px solid rgba(243,234,216,.45); }
 .cta .done { align-self: center; font-size: 14px; color: rgba(243,234,216,.85); }
 .cta .done b { color: var(--accent); font-size: 16px; font-weight: 800; margin-left: 2px; }
+.ai-used { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.ai-used span { flex-basis: 100%; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: rgba(243,234,216,.7); }
+.ai-used b { font-size: 13px; font-weight: 600; color: var(--cream); padding: 6px 12px; border-radius: 8px;
+  border: 1px solid rgba(243,234,216,.4); background: rgba(243,234,216,.06); }
 
 /* 만든 것 */
 .sec-title { display: flex; align-items: baseline; justify-content: space-between; color: var(--cream); margin: 56px 0 18px; }
