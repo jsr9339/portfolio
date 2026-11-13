@@ -22,7 +22,7 @@
      "ai": ["Claude Code", "Gemini"], "url": "https://my-classifier-alpha.vercel.app/", "img": "img/w2.png"},
     {"week": 3, "title": "엑셀 정리기",
      "line": "엉망인 엑셀·CSV를 넣으면 증상 진단 · 정리본 · 바꾼 기록이 나옵니다.\n파일은 브라우저를 떠나지 않습니다",
-     "judgment": "초→분 기준을 80에서 180으로 다시 정했다.\n80은 이 파일에만 맞는 숫자라서다.\n대신 1~3분 전화 472줄은 초 그대로 남아 표시만 하고,\n테스트·이전 처리상태 365줄은 지우지 못해 한계로 알린다.\n정확한 숫자가 필요하면 정리 스크립트를 쓴다.",
+     "judgment": "초→분 기준을\n80에서 180으로\n다시 정했다.\n80은 이 파일에만\n맞는 숫자라서다.\n대신 1~3분 전화 472줄은\n초 그대로 남아\n표시만 하고,\n테스트·이전 처리상태 365줄은\n지우지 못해\n한계로 알린다.\n정확한 숫자가 필요하면\n정리 스크립트를 쓴다.",
      "ai": ["Claude Code", "Google Colab"], "url": "https://cleaner-drab-tau.vercel.app/", "img": ""}
   ],
   "proposal": null
