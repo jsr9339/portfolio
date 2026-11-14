@@ -22,7 +22,7 @@
      "ai": ["Claude Code", "Gemini"], "url": "https://my-classifier-alpha.vercel.app/", "img": "img/w2.png"},
     {"week": 3, "title": "근태 정리기",
      "line": "근태·초과근무 엑셀을\n끌어다 놓으면\n내 처방대로\n정리본과\n바꾼 기록이\n나옵니다.\n파일은 브라우저를\n떠나지 않습니다",
-     "judgment": "틀렸는지 알 수 없는 값은\n고치지 않고\n표시만\n하기로 정했다.\n고치는 처방과\n표시만 하는 처방을 나눠\n처방마다\n이유를 적었다.\n지어낸 파일 29,751줄을\n정답과 맞춰 보니\n어긋난 595줄 중\n591줄에\n표시가 붙었다.\n표시 없이 놓친 4줄은\n정상 줄까지\n잡을 위험이 있어\n한계로 알린다.",
+     "judgment": "틀렸는지 알 수 없는 값은\n고치지 않고\n표시만\n하기로\n정했다.\n고치는 처방과\n표시만 하는 처방을\n나눠\n처방마다\n이유를\n적었다.\n지어낸 파일 29,751줄을\n정답과 맞춰 보니\n어긋난 595줄 중\n591줄에\n표시가\n붙었다.\n표시 없이\n놓친 4줄은\n정상 줄까지\n잡을\n위험이 있어\n한계로\n알린다.",
      "ai": ["Claude Code"], "url": "https://my-cleaner-five.vercel.app/", "img": "img/w3.png"}
   ],
   "proposal": null
