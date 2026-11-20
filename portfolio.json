@@ -26,7 +26,7 @@
      "ai": ["Claude Code"], "url": "https://my-cleaner-five.vercel.app/", "img": "img/w3.png"},
     {"week": 4, "title": "월간 보고 SQL 앱",
      "line": "매달 추출한 엑셀을 넣으면\n정해 둔 질문의 답이\nSQL과 함께 나옵니다",
-     "judgment": "«고객 한 명당»의 분모는\n고객 전체 50,000명으로 정했다.\n문의가 없는 26,602명도\n0건으로 넣는다.\n조인은 문의를 고객별로\n먼저 집계하고\n고객을 왼쪽에 둔\nLEFT JOIN으로 정했다.\n같은 질문이 조인 방식 하나로\n0.66건과 1.40건으로\n갈렸기 때문이다.\n질문마다 기댓값을 둘씩 고정해\n11개 질문의 21개 값이\n모두 맞는지 확인하고,\n한 행은 다른 쿼리로\n다시 세어 검산한다.\n기댓값은 SQL이 질문의 뜻대로\n짜였는지까지는 못 보므로,\n그 검토는 사람과\n리뷰어 서브에이전트가 한다.",
+     "judgment": "재문의는 비율(해지 36.0%)과 건수(요금 2,053건)를 같이 보기로 정했다",
      "ai": ["Claude Code (MCP · 서브에이전트)", "BigQuery", "Gemini"], "url": "https://sql-window-psi.vercel.app/", "img": ""}
   ],
   "proposal": null
