@@ -29,7 +29,7 @@
      "facts": ["질문→SQL→근거·원인", "준비된 질문 3개", "CSV·엑셀 올리기"],
      "line": "인사 데이터를 한국어로 물으면\nSQL과 결과,\n산출 근거,\n원인 한 단계가 나옵니다.\n파일은 브라우저를\n떠나지 않습니다",
      "judgment": "월 인원은 급여 행 수가 아니라 사번 수로 세기로 정했다. 2025년 12월은 1,716행이지만 572명이다. 원본 행은 AI에 보내지 않고 질문과 집계 결과 50행 이하만 보낸다. 준비된 질문 세 개는 앱 밖에서 다시 계산해 행 수와 첫 행·마지막 행이 모두 같았다. 시간외수당이 다음 달에 지급된다는 사실은 코드에 없어서 내가 직접 적었다. 다만 «근거 일치» 표시는 SQL이 실행되는지는 못 봐서 AI가 쓴 SQL은 사람이 읽어야 한다.",
-     "ai": ["Claude Code", "Gemini"], "url": "https://my-app-ten-navy-63.vercel.app/", "img": ""}
+     "ai": ["Claude Code", "Gemini"], "url": "https://my-app-ten-navy-63.vercel.app/", "img": "img/w4.png"}
   ],
   "proposal": null
 }
