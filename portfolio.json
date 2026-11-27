@@ -33,7 +33,7 @@
     {"week": 5, "title": "지표 사전",
      "line": "지표마다 정의서 한 장.\n정의서대로 값을 계산하고\n대시보드로 보여 줍니다",
      "judgment": "",
-     "ai": ["Claude Code"], "url": "https://metric-dictionary-beta.vercel.app/", "img": ""}
+     "ai": ["Claude Code"], "url": "https://metric-dictionary-beta.vercel.app/", "img": "img/w5.png"}
   ],
   "proposal": null
 }
